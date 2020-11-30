@@ -4,6 +4,7 @@ Technologies and tools I've used with this project:
 
 - React
 - React Hooks
+- TypeScript
 - Styled Components
 - localStorage
 
