@@ -1,18 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
 import { theme } from 'theme/mainTheme';
 import GlobalStyle from 'theme/GlobalStyle';
 
-const MainTemplate = ({ children }) => (
+const MainTemplate = ({ children }: { children: React.ReactNode }) => (
   <main>
     <GlobalStyle />
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
   </main>
 );
-
-MainTemplate.propTypes = {
-  children: PropTypes.element.isRequired,
-};
+MainTemplate.displayName = 'MainTemplate';
 
 export default MainTemplate;

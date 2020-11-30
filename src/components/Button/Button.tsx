@@ -1,6 +1,7 @@
+import React, { ComponentProps } from 'react';
 import styled from 'styled-components';
 
-const Button = styled.button`
+const StyledButton = styled.button<{ remove: boolean; mr: string }>`
   color: #fff;
   background-color: ${({ remove, theme }) => (remove ? theme.remove : theme.add)};
   border: 1px solid transparent;
@@ -8,7 +9,7 @@ const Button = styled.button`
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
-  margin-left: ${({ mr }) => mr};
+  margin-right: ${({ mr }) => mr};
   font-size: 14px;
   font-weight: 400;
   line-height: 1.42857143;
@@ -20,5 +21,12 @@ const Button = styled.button`
   user-select: none;
   background-image: none;
 `;
+
+type ButtonProps = ComponentProps<typeof StyledButton>;
+
+const Button = React.memo<ButtonProps>(({ ...props }) => {
+  return <StyledButton {...props} />;
+});
+Button.displayName = 'Button';
 
 export default Button;
