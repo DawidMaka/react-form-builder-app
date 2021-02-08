@@ -1,5 +1,5 @@
-import React from 'react';
-import { ItemKeys } from 'base/types';
+import { ItemKeys } from 'base/types'
+import React from 'react'
 
 type State = {
   handleAddItem: (parent: string) => void;
@@ -7,6 +7,6 @@ type State = {
   handleUpdateItem: (name: ItemKeys, value: string, id: string) => void;
 };
 
-const PageContext = React.createContext<State | undefined>(undefined);
+const PageContext = React.createContext<State | undefined>(undefined)
 
-export default PageContext;
+export default PageContext

@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import { Item } from 'base/types';
+import { useState, useEffect } from 'react';
 
 export const useStateWithLocalStorage = (localStorageKey: string) => {
   const [value, setValue] = useState<Item[]>(

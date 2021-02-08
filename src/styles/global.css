@@ -1,0 +1,29 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #FC354C;
+  background: -webkit-linear-gradient(to right, #0ABFBC, #FC354C);
+  background: linear-gradient(to right, #0ABFBC, #FC354C);
+  font-size: 1.4rem;
+  margin: 48px 0 0 13px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
