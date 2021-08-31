@@ -8,9 +8,9 @@ Technologies and tools I've used with this project:
 - Styled Components
 - localStorage
 
-Live: https://web-devvv.github.io/react-form-builder-app/
+Live: https://DawidMaka.github.io/react-form-builder-app/
 
-Src: https://github.com/web-deVVV/react-form-builder-app/tree/master/src
+Src: https://github.com/DawidMaka/react-form-builder-app/tree/master/src
 
 ## Description
 
@@ -19,7 +19,7 @@ Simple front-end based Form builder
 ## Instalation
 
 ```sh
-git clone https://github.com/web-deVVV/react-form-builder-app [folder-name]
+git clone https://github.com/DawidMaka/react-form-builder-app [folder-name]
 cd [folder-name]
 npm install
 ```
